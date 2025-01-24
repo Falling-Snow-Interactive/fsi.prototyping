@@ -1,0 +1,22 @@
+{
+  "name": "com.fallingsnowinteractive.prototyping",
+  "version": "1.0.1",
+  "displayName": "FSI Prototyping",
+  "description": "Package for prototyping.",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "keywords": [
+    "Character",
+    "Animated",
+    "Mixamo"
+  ],
+  "author": {
+    "name": "Kira Dinan",
+    "email": "kiradinan.dev@gmail.com"
+  },
+  "hideInEditor": false,
+  "dependencies": {
+    "com.unity.inputsystem": "1.9.0",
+    "com.unity.cinemachine": "3.0.0"
+  }
+}
