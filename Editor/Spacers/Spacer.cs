@@ -1,17 +1,17 @@
 using UnityEditor;
 using UnityEngine.UIElements;
 
-namespace Fsi.Prototyping.Editor.Spacers
+namespace fsi.prototyping.Spacers
 {
     [UxmlElement]
     public partial class Spacer : VisualElement
     {
-        private const string DOCUMENT_PATH = "Packages/com.fallingsnowinteractive.prototyping/Editor/Spacers/Spacer_UI.uxml";
+        private const string DocumentPath = "Packages/com.fallingsnowinteractive.prototyping/Editor/Spacers/Spacer_UI.uxml";
         
         public Spacer()
         {
             #if UNITY_EDITOR
-            var asset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(DOCUMENT_PATH);
+            VisualTreeAsset asset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(DocumentPath);
             asset.CloneTree(this);
             #endif
         }
