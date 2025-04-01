@@ -7,7 +7,8 @@ namespace fsi.prototyping.Spacers
     [UxmlElement]
     public partial class Spacer : VisualElement
     {
-        public static Color DefaultColor => new(42f/255f, 42f/255f, 42f/255f, 1f);
+        private static Color DefaultColor => new(42f/255f, 42f/255f, 42f/255f, 1f);
+        private static Color LightColor => new(72f/255f, 72f/255f, 72f/255f, 1f);
         
         private const string DocumentPath = "Packages/com.fallingsnowinteractive.prototyping/Editor/Spacers/Spacer_UI.uxml";
         
@@ -41,7 +42,7 @@ namespace fsi.prototyping.Spacers
             #endif
         }
         
-        public Spacer(float size, bool wide = true)
+        public Spacer(float size, bool wide = true, bool light = false)
         {
             #if UNITY_EDITOR
             // VisualTreeAsset asset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(DocumentPath);
@@ -51,7 +52,7 @@ namespace fsi.prototyping.Spacers
                                  {
                                      style =
                                      {
-                                         backgroundColor = DefaultColor,
+                                         backgroundColor = light ? LightColor : DefaultColor,
                                          
                                          marginTop = 5,
                                          marginBottom = 5,
@@ -86,6 +87,11 @@ namespace fsi.prototyping.Spacers
         public static VisualElement Tall(float width = 3)
         {
             return new Spacer(width, false);
+        }
+
+        public static Spacer LightWide(float width = 3)
+        {
+            return new Spacer(width, true, true);
         }
     }
 }
