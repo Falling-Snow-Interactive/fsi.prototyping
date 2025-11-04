@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PROTO_Checker_Magenta_MAT
+  m_Name: PROTO_Checker_Magenta_0_MAT
   m_Shader: {fileID: -6465566751694194690, guid: a34704cfe100442c383198fae38ee27d, type: 3}
   m_Parent: {fileID: 2100000, guid: 3fc0c8d78078147a49b4fdf43fa173f3, type: 2}
   m_ModifiedSerializedProperties: 2

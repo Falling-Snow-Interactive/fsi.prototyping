@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PROTO_Checker_Red_MAT
+  m_Name: PROTO_Checker_Green_0_MAT
   m_Shader: {fileID: -6465566751694194690, guid: a34704cfe100442c383198fae38ee27d, type: 3}
   m_Parent: {fileID: 2100000, guid: 3fc0c8d78078147a49b4fdf43fa173f3, type: 2}
   m_ModifiedSerializedProperties: 2
@@ -46,8 +46,8 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.0806483, b: 0, a: 1}
-    - _Color: {r: 1, g: 0, b: 0, a: 1}
-    - _Emission: {r: 1, g: 0.08627451, b: 0, a: 0}
+    - _BaseColor: {r: 0.039443612, g: 1, b: 0, a: 1}
+    - _Color: {r: 0, g: 1, b: 0.013357401, a: 1}
+    - _Emission: {r: 0.058823533, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
